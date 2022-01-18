@@ -1,0 +1,6 @@
+name: ChatGames
+version: '${project.version}'
+main: xyz.wiseared.chatgames.ChatGames
+api-version: 1.18
+authors: [ Wiseared ]
+description: ChatGames

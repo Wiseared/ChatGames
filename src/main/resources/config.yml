@@ -1,0 +1,34 @@
+SETTINGS:
+  PREFIX: "&e&lCHATGAMES &7»"
+  TIME: 60 # The amount of seconds for a new game to start
+  GAME-ENDING: 40 # After how many seconds should be auto deactivate a game?
+
+GAMES:
+  SHUFFLE-1: # Can be anything you'd like and you can make as many of these as you'd like
+    TYPE: "shuffle" # Available types: shuffle, equation, typeword and reversed
+    QUESTION: "%prefix% &fType this word correct: &c&l%word%" # This will be broadcasted
+    ANSWER: "apple" # The answer players need to type
+    REWARDS:
+      - "give %player% golden_apple 5"
+  EQUATION-1:
+    TYPE: "equation"
+    QUESTION: "%prefix% &fSolve this asap: &c&l7 + 7"
+    ANSWER: "14"
+    REWARDS:
+      - "give %player% emerald 5"
+  TYPEWORD-1:
+    TYPE: "typeword"
+    QUESTION: "%prefix% &fType this word: &c&lApple"
+    ANSWER: "apple"
+    REWARDS:
+      - "give %player% diamond_block 5"
+  REVERSED-1:
+    TYPE: "reversed"
+    QUESTION: "%prefix% &fThis word is spelled backwards: &c&l%word% &ftype it right!"
+    ANSWER: "apple"
+    REWARDS:
+      - "give %player% diamond 5"
+
+MESSAGES:
+  NO-ANSWER: "%prefix% &cNobody gave an answered in time!"
+  GUESSED-RIGHT: "%prefix% &c%player% &fhas got the answer right! &7(&e%answer%&7)"
