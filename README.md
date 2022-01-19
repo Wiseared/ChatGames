@@ -9,3 +9,6 @@ Make as many minigames as you'd like and give people rewards for getting it corr
 - equation
 - typeword
 - reversed
+
+# Tested Version(s):
+- 1.18.1
